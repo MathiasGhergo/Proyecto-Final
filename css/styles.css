@@ -75,18 +75,29 @@ grid-template-columns: repeat(2,1fr);
     padding: 10px;
     text-decoration: underline;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 .article__div{
     padding: 30px;
     margin: 20px;
 
 }
+.article__socios{
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.article__socios-input{
+   height: 100px;
+}
 .article__button{
     background-color: black;
     color: white;
     margin:5px;
     padding:5px;
+    cursor: pointer;
+    font-weight: bold;
 }
 .article__noticias{
     text-align: center;
