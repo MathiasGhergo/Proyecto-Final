@@ -140,6 +140,8 @@ grid-template-columns: repeat(2,1fr);
     text-align: center;
     justify-content: center;
     align-items: center;
+    border: dashed 15px black;
+    
 }
 .contenedor__1{
     display: flex;
@@ -161,8 +163,9 @@ width: 50%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    border: dashed 15px black;
 }
 .article__divisor{
     display: flex;
