@@ -88,9 +88,6 @@ grid-template-columns: repeat(2,1fr);
     text-align: center;
     font-size: 30px;
 }
-.article__socios-input{
-   height: 100px;
-}
 .article__button{
     background-color: black;
     color: white;
@@ -137,6 +134,13 @@ grid-template-columns: repeat(2,1fr);
     font-size:15px;
     padding: 15px;
 }
+.article__input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 .contenedor__1{
     display: flex;
     flex-direction: row;
@@ -152,6 +156,13 @@ grid-template-columns: repeat(2,1fr);
 .article{
 float: left;
 width: 50%;
+}
+.article__input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .article__divisor{
     display: flex;
