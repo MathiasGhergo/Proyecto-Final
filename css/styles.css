@@ -30,20 +30,46 @@ li a{
     font-size: 22px;
     flex-wrap: wrap;
 }
-.encabezado__nav {
-list-style: none;
-display: grid;
-grid-template-columns: repeat(2,1fr);
-   grid-template-rows: minmax(10px,5vh);
+.encabezado__h ul {
+     display: none;
+
 }
+.encabezado__h input{
+    display: none;
+}
+ input:checked ~ ul{
+    display: block;
+}
+.encabezado__h  label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+
+ .encabezado__h li {
+    display: block;
+    background:black;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px black;
+  }
 .encabezado__imagen{
-    display: flex;
+    display: none;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     
 }
 .encabezado__form{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: flex-end;
 
@@ -130,6 +156,33 @@ grid-template-columns: repeat(2,1fr);
     margin-right: 10px;
 }
 @media(min-width:600px)and (max-width:1024px){
+    .encabezado__h ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+   }
+    .encabezado__h input{
+        display: none;
+    }
+     input:checked ~ ul{
+        display: none;
+    }
+    .encabezado__h  label {
+       display: none;
+      }
+    
+    .encabezado__titulo{
+        font-size: 30px;
+        align-items: center;
+    }
+    .encabezado__imagen{
+        display: flex;
+    }
+    .encabezado__form{
+        justify-content: center;
+    }
+    
 .article{
     font-size:15px;
     padding: 15px;
@@ -155,10 +208,23 @@ grid-template-columns: repeat(2,1fr);
 }
 }
 @media (min-width:1025px){
-.article{
-float: left;
-width: 50%;
-}
+    .encabezado__h ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+   
+   }
+    .encabezado__h  label {
+        display: none;
+      }
+    .encabezado__imagen{
+        display: flex;
+    }
+    .article{
+    float: left;
+    width: 50%;
+    }
 .article__input{
     display: flex;
     flex-direction: column;
@@ -183,7 +249,7 @@ width: 50%;
     padding: 15px;
 }
 .encabezado__titulo{
-    font-size: 30px;
+    font-size: 35px;
     align-items: center;
 }
 .encabezado__form{
