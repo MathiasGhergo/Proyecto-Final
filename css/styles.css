@@ -88,13 +88,19 @@ li a{
     p{
         padding: 10px;
     }
+    .socios{
+        background-image: url(../Img/25f5e7837dd974db02fdf2a532db957e.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+       background-size: cover;
+       }
 .article{
     text-align: center;
     font-size: 20px;
     padding: 20px;
 }
 .article__seccion{
-    border: dashed 15px black;
+    border: solid 10px black;
 }
 .article__titulo{
     padding: 10px;
@@ -110,8 +116,13 @@ li a{
 .article__socios{
     padding: 30px;
     margin: 20px;
-    text-align: center;
+
     font-size: 30px;
+    color: red;
+    text-shadow: white -1px 1px, white -2px 2px, white -3px 3px;
+    color: red;
+    letter-spacing: 1px;
+    
 }
 .article__button{
     background-color: black;
@@ -259,6 +270,9 @@ li a{
 .footer__redes{
     font-size: 15px;
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
 }
 @media(min-width:600px)and (max-width:1024px){
     .encabezado__h ul {
@@ -287,6 +301,12 @@ li a{
     .encabezado__form{
         justify-content: center;
     }
+    .socios{
+        background-image: url(../Img/25f5e7837dd974db02fdf2a532db957e.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+       background-size: cover;
+       }
    
 .article{
     font-size:15px;
@@ -298,7 +318,7 @@ li a{
     text-align: center;
     justify-content: center;
     align-items: center;
-    border: dashed 15px black;
+    border: solid 10px black;
     
 }
 .contenedor__1{
@@ -327,7 +347,12 @@ li a{
     .encabezado__imagen{
         display: flex;
     }
-   
+   .socios{
+    background-image: url(../Img/25f5e7837dd974db02fdf2a532db957e.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   background-size: cover;
+   }
     .article{
     float: left;
     width: 50%;
@@ -338,7 +363,7 @@ li a{
     text-align: center;
     justify-content: flex-end;
     align-items: center;
-    border: dashed 15px black;
+    border: solid 10px black;
 }
 .article__divisor{
     display: flex;
