@@ -108,6 +108,13 @@ li a{
     text-align: center;
     font-size: 30px;
 }
+.article__form-input{
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+}
 .article__div{
     padding: 30px;
     margin: 20px;
@@ -131,6 +138,9 @@ li a{
     padding:5px;
     cursor: pointer;
     font-weight: bold;
+}
+.article__button:hover{
+    background-color: red;
 }
 .article__noticias{
     text-align: center;
@@ -312,14 +322,20 @@ li a{
     font-size:15px;
     padding: 15px;
 }
-.article__input{
+.article__form{
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
     border: solid 10px black;
-    
+}
+.article__form-input{
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
 }
 .contenedor__1{
     display: flex;
@@ -357,7 +373,14 @@ li a{
     float: left;
     width: 50%;
     }
-.article__input{
+    .article__form-input{
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+}
+.article__form{
     display: flex;
     flex-direction: column;
     text-align: center;

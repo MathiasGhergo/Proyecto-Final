@@ -32,7 +32,6 @@
     <div class="encabezado__form">
     <form action="">
         <input type="search" placeholder="Buscar..."> <button>Buscar</button>
-        <label for="search"></label>
     </form>
 </div>
 <div class="encabezado__imagen">
@@ -52,23 +51,23 @@
             </figure>
             </article>
             <article class="article">
-                <div class="article__input">
+                <div class="article__form">
                 <form class="article__socios" action="">
-                    <input style="width:200px" placeholder="nro. Documento" type="text" list="documento">
+                    <input class="article__form-input" placeholder="nro. Documento" type="text" list="documento">
                     <label for="documento"> Ingrese su documento</label>
-                  </form>
-                <form class="article__socios" action="">
-                    <input style="width:200px" placeholder="Seleccionar..." type="text" list="genero">
+                  
+                    <input class="article__form-input" placeholder="Seleccionar..." type="text" list="genero">
                     <label for="genero">Seleccione su Genero</label>
+                   
                     <datalist id="genero">
                       <option value="Masculino">Masculino</option>
                       <option value="Femenino">Femenino</option>
                       <option value="No binario">No binario</option>
                     </datalist>
-                  </form>
-                  <form class="article__socios" action="">
-                    <input style="width:200px" placeholder="Seleccionar..." type="text" list="nacionalidad">
+                
+                    <input class="article__form-input" placeholder="Seleccionar..." type="text" list="nacionalidad">
                     <label for="nacionalidad"><i>Seleccione su Nacionalidad </i> </label>
+                    
                     <datalist id="nacionalidad">
                       <option value="Argentina">Argentina</option>
                       <option value="Bolivia">Bolivia</option>
@@ -77,11 +76,11 @@
                       <option value="Paraguay">Paraguay</option>
                       <option value="Otros">Otro</option>
                     </datalist>
-                  </form>
-                  <form class="article__socios" action="">
-                    <input style="width:200px" placeholder="e-mail" type="email" list="email">
+            
+                    <input class="article__form-input" placeholder="e-mail" type="email" list="email">
                     <label for="email">Ingrese su e-mail</label>
-                  </form>
+                  
+                </form>
                 <button class="article__button">Registrarse</button>
             </div>
             </article>
