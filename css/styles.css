@@ -13,6 +13,9 @@ li a{
     margin: 5px;
     font-size: 18px;
 }
+li a:hover{
+    color: red;
+}
 .encabezado{
     display: grid;
    grid-template-columns: repeat(2,1fr);
@@ -29,11 +32,17 @@ li a{
     align-items: baseline;
     font-size: 22px;
     flex-wrap: wrap;
+    color: red;
+    border-radius: 5px;
+    background: linear-gradient(to right, red 35%, #ffffff 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .encabezado__h ul {
      display: none;
 
 }
+
 .encabezado__h input{
     display: none;
 }
@@ -60,6 +69,7 @@ li a{
     list-style: none;
     border-bottom: 1px black;
   }
+ 
 .encabezado__imagen{
     display: none;
     align-items: center;
@@ -80,7 +90,7 @@ li a{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(209, 8, 8);
+    background-color: white;
     }
     li{
         padding:10px
@@ -89,7 +99,13 @@ li a{
         padding: 10px;
     }
     .socios{
-        background-image: url(../Img/25f5e7837dd974db02fdf2a532db957e.jpg);
+        font-size: 1rem;
+        padding: 2em 1em;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: white;
+        background-image: url(../Img/socios.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
        background-size: cover;
@@ -154,6 +170,53 @@ li a{
     width: 100%;
     height: 300px;
 }
+/* Tarjeta de compras */
+.card {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    background-color: red;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .buttons button:hover {
+    background-color: green;
+  }
+  
 /* Carrusel de fotos */
 .slide {
     position: relative;
@@ -266,7 +329,11 @@ li a{
         color: white;
 }
 .footer__titulo{
-    text-align: center;
+    text-align: left;
+      border-radius: 5px;
+    background: linear-gradient(to right, red 20%, #ffffff 30%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .footer__row{
     display: flex;
@@ -275,7 +342,6 @@ li a{
 .footer__col{
     width: 50%;
     padding: 10px;
-    box-sizing: border-box;
 }
 .footer__redes{
     font-size: 15px;
@@ -311,13 +377,13 @@ li a{
     .encabezado__form{
         justify-content: center;
     }
-    .socios{
-        background-image: url(../Img/25f5e7837dd974db02fdf2a532db957e.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-       background-size: cover;
-       }
-   
+  
+       .contenedor__1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+     justify-content: space-between;
+    }
 .article{
     font-size:15px;
     padding: 15px;
@@ -337,17 +403,17 @@ li a{
     border-radius: 3px;
     width: 100%;
 }
-.contenedor__1{
-    display: flex;
-    flex-direction: row;
-}
 .article__divisor{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .article__noticias{
-    width: 50%;
-}
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+ }
 }
 @media (min-width:1025px){
     .encabezado__h ul {
@@ -363,12 +429,7 @@ li a{
     .encabezado__imagen{
         display: flex;
     }
-   .socios{
-    background-image: url(../Img/25f5e7837dd974db02fdf2a532db957e.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-   background-size: cover;
-   }
+
     .article{
     float: left;
     width: 50%;
@@ -388,15 +449,23 @@ li a{
     align-items: center;
     border: solid 10px black;
 }
+.contenedor__1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ justify-content: space-between;
+}
+
+
+.article__noticias{
+   width: 100%;
+   height: 100%;
+   padding: 15px;
+}
 .article__divisor{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-}
-.article__noticias{
-    float: left;
-    width: 50%;
-    padding: 15px;
 }
 .article__noticias__2{
     float: right;
@@ -417,10 +486,6 @@ li a{
 .footer__col{
     display: flex;
     justify-content: center;
-}
-.contenedor__1{
-    display: flex;
-    flex-direction: row;
 }
 
 }
