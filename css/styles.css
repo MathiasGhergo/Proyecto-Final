@@ -32,11 +32,9 @@ li a:hover{
     align-items: baseline;
     font-size: 22px;
     flex-wrap: wrap;
-    color: red;
     border-radius: 5px;
-    background: linear-gradient(to right, red 35%, #ffffff 50%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    gap: 10px;
+
 }
 .encabezado__h ul {
      display: none;
@@ -365,9 +363,7 @@ li a:hover{
 .footer__titulo{
     text-align: left;
       border-radius: 5px;
-    background: linear-gradient(to right, red 20%, #ffffff 30%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+
 }
 .footer__row{
     display: flex;
