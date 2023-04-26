@@ -1,0 +1,142 @@
+/* Encabezado */
+.encabezado{
+    display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: minmax(80px,5vh)60px;
+   background-color: black;
+   margin: 5px;
+   color: white;
+   height: 160px;
+   
+   &__form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+   }
+   &__imagen{
+    display: none;
+    align-items: center;
+    justify-content: center;
+   }
+    &__titulo{
+        display: flex;
+        padding: 10px;
+        align-items: baseline;
+        font-size: 22px;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        gap: 10px;
+    }
+
+   li a{
+    color: white;
+    text-decoration: none;
+    font-style: inherit;
+    margin: 5px;
+    font-size: 18px;
+    
+    &:hover{
+        color:red;
+    }
+   }
+}
+    nav{
+        input{
+            display: none;
+
+            &:checked ~ ul{
+                display: block;
+            }
+        }
+        label {
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-weight: bold;
+            text-align: center;
+            user-select: none;
+          }
+          li {
+            display: block;
+            background:black;
+            margin: 0;
+            padding: 10px;
+            list-style: none;
+            border-bottom: 1px black;
+          }
+        ul{
+            display: none;
+        }
+    }
+    
+    @media(min-width:600px)and (max-width:1024px){
+        .encabezado{
+    
+            &__titulo{
+                font-size: 30px;
+                align-items: center;
+            }
+        
+            &__imagen{
+                display: flex;
+            }
+        
+            &__form{
+                justify-content: center;
+            }
+        }
+        nav{
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+           }
+    
+           & input{
+            display: none;
+    
+            &:checked ~ ul{
+                display: none;
+            }
+        }
+    
+        & label {
+            display: none;
+           }
+        }
+    }
+    @media (min-width:1025px){
+        .encabezado{
+            
+            &__imagen{
+                display: flex;
+                justify-content: center;
+            }
+    
+             &__titulo{
+            font-size: 35px;
+            align-items: center;
+            }
+            &__form{
+            justify-content: center;
+             }
+        }
+      
+        nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+       }
+    
+       & label {
+        display: none;
+      }
+    }
+}

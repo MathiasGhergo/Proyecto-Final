@@ -1,0 +1,45 @@
+ /* Tarjeta de compras */
+ .card {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    & img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    & h3 {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+
+      & p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        & button {
+            background-color: red;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+
+            &:hover {
+                background-color: green;
+              }
+          }
+      }

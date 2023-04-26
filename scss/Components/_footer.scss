@@ -1,0 +1,33 @@
+footer{
+    background-color: black;
+    color: white;
+
+    & h4{
+        text-align: left;
+        border-radius: 5px;
+    }
+
+    .fila{
+        display: flex;
+        justify-content: space-between;
+    } 
+    .col{
+        width: 50%;
+        padding: 10px;
+    } 
+    .redes{
+        font-size: 15px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+}
+@media (min-width:1025px){
+    footer{
+    .col{
+        display: flex;
+        justify-content: center;
+    }
+}
+}

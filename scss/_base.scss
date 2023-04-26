@@ -1,0 +1,36 @@
+/*  Reinicio de Css */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana,Tahoma, sans-serif;
+}
+
+.titulo{
+    color: red;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px black ;
+    padding: 20px;
+   
+   &__2{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 2px  red ;
+    padding: 10px;
+   }
+   &__3{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+   }
+   &__4{
+    text-align: center;
+    font-size: 20px;
+    list-style: none;
+    border: solid 1px black;
+    background-color: black;
+    color: white;
+   }
+}  
