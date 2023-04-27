@@ -18,6 +18,8 @@
         padding: 20px;
         &__seccion{
             border: solid 1px black;
+            background: rgb(235,4,4);
+            background: linear-gradient(0deg, rgba(235,4,4,1) 7%, rgba(236,236,236,1) 29%, rgba(255,0,0,1) 78%, rgba(255,255,255,1) 98%);
         }
         &__partidos{
             display: grid;
@@ -42,6 +44,22 @@
          }
          &__noticias{
             text-align: center;
+
+            & h3{
+                font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 30px;
+            letter-spacing: 1px;
+            color: #000000;
+            font-weight: normal;
+            text-decoration: none solid rgb(68, 68, 68);
+            font-style: italic;
+            font-variant: small-caps;
+            text-transform: lowercase;
+            }
+
+            & figcaption{
+                font-size: 18px;
+            }
         }
         &__button{
             background-color: black;
@@ -53,7 +71,7 @@
             &:hover{
                 background-color: red;
             }
-        }   
+        }         
     }
     @media(min-width:600px)and (max-width:1024px){
         .encabezado{

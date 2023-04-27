@@ -26,6 +26,31 @@
         text-align: center;
     }
 }
+.acceso{
+    padding: 40px;
+    position: relative;
+
+    & .mas{
+        height: 80px;
+        position: absolute;
+        top:65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    & h2{
+        color: white;
+        font-weight: 700;
+        padding: 40px 0 10px 0;
+        text-transform: uppercase;
+        font-size: 40px;
+        position:absolute;
+        top:35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: inherit
+    }
+}
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -54,17 +79,9 @@
         &__divisor{
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
         }
-
-        &__divisor{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-    
         &__noticias{
             width: 100%;
             height: 100%;
