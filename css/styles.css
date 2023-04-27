@@ -582,7 +582,7 @@ footer .redes {
   position: relative;
 }
 .acceso .mas {
-  height: 80px;
+  height: 20px;
   position: absolute;
   top: 65%;
   left: 50%;
@@ -593,9 +593,9 @@ footer .redes {
   font-weight: 700;
   padding: 40px 0 10px 0;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 17px;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -638,6 +638,30 @@ footer .redes {
     padding: 15px;
     text-align: center;
   }
+  .acceso {
+    padding: 40px;
+    position: relative;
+  }
+  .acceso .mas {
+    height: 50px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .acceso h2 {
+    color: white;
+    font-weight: 700;
+    padding: 40px 0 10px 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: inherit;
+  }
 }
 @media (min-width: 1025px) {
   .article {
@@ -652,6 +676,30 @@ footer .redes {
   .article__noticias {
     width: 100%;
     text-align: center;
+  }
+  .acceso {
+    padding: 40px;
+    position: relative;
+  }
+  .acceso .mas {
+    height: 80px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .acceso h2 {
+    color: white;
+    font-weight: 700;
+    padding: 40px 0 10px 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: inherit;
   }
 }
 .socios {
