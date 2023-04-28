@@ -53,6 +53,21 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.encabezado__form button {
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 7px outset red;
+  border-radius: 10px;
+}
+.encabezado__form button:hover {
+  background-color: red;
 }
 .encabezado__imagen {
   display: none;
@@ -117,6 +132,7 @@ nav ul {
   }
   .encabezado__form {
     justify-content: center;
+    padding-right: 40px;
   }
   nav ul {
     display: flex;
@@ -154,7 +170,8 @@ nav ul {
     align-items: center;
   }
   .encabezado__form {
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 40px;
   }
   nav ul {
     display: flex;
@@ -322,6 +339,20 @@ footer .col {
   width: 50%;
   padding: 10px;
 }
+footer .col input {
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 7px outset red;
+  border-radius: 10px;
+}
+footer .col input:hover {
+  background-color: red;
+}
 footer .redes {
   font-size: 15px;
   margin-right: 10px;
@@ -409,6 +440,8 @@ footer .redes {
 }
 .article__button:hover {
   background-color: red;
+  font-size: 20px;
+  transition-duration: 1s;
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {

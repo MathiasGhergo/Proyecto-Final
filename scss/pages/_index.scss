@@ -72,6 +72,8 @@
             font-weight: bold;
             &:hover{
                 background-color: red;
+                font-size: 20px;
+                transition-duration: 1s;
             }
         }  
     }       

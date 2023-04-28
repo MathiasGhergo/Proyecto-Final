@@ -14,6 +14,21 @@ footer{
     .col{
         width: 50%;
         padding: 10px;
+
+        & input{
+            background-color: black;
+            font-size: 15px;
+                color: white;
+                margin:5px;
+                padding:5px;
+                cursor: pointer;
+                font-weight: bold;
+                &:hover{
+                    background-color: red;
+                }
+            border: 7px outset red;
+            border-radius: 10px;
+        }
     } 
     .redes{
         font-size: 15px;
