@@ -29,12 +29,9 @@
      }
 
      &__form{
-        display: flex;
-        flex-direction: column;
         text-align: center;
-        justify-content: center;
-        align-items: center;
-        border: solid 10px black;
+        border: solid 5px black;
+        box-shadow: 10px 10px 20px 10px;
 
         &-input{
             margin-bottom: 20px;
@@ -78,12 +75,8 @@
     padding: 15px;
 
     &__form{
-        display: flex;
-        flex-direction: column;
         text-align: center;
-        justify-content: center;
-        align-items: center;
-        border: solid 10px black;
+        border: solid 5px black;
 
         &-input{
             margin-bottom: 20px;
@@ -119,6 +112,8 @@
 
             
         &__socios{
+        display: flex;
+         flex-direction: column;
         padding: 30px;
         margin: 20px;
         font-size: 30px;
@@ -126,24 +121,19 @@
         text-shadow: white -1px 1px, white -2px 2px, white -3px 3px;
         color: red;
         letter-spacing: 1px;
-        height: 100%;
+        width: 50%;
+        height:100%;
     } 
         
             &__form{
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                justify-content: flex-end;
                 align-items: center;
-                border: solid 10px black;
-                height: 100%;
+                border: solid 5px black;
 
                 &-input{
                     margin-bottom: 20px;
                     padding: 5px;
                     border: 1px solid #ccc;
                     border-radius: 3px;
-                    width: 100%;
                 }
             }
 
