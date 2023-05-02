@@ -1,0 +1,125 @@
+.inicio {
+  font-size: 1rem;
+  padding: 2em 1em;
+  background-image: url(../Img/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    
+
+    & article{
+      padding: 20px;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  .registro {
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+
+    & h1 {
+      text-align: center;
+    }
+
+    &  form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      & a{
+       text-decoration: underline;
+       color: red;
+       font-size: 20px;
+      }
+    }
+
+    &   label {
+      margin-top: 10px;
+    }
+
+    &   input{
+      border-radius: 5px;
+      border: none;
+      padding: 10px;
+    }
+    
+    &   button {
+      background-color: black;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px;
+      margin-top: 20px;
+
+      &:hover {
+        background-color: red;
+      }
+    }
+    
+  }
+@media (min-width: 1025px){
+.inicio {
+      gap: 70px;
+      justify-content: space-between;
+
+      & article{
+        outline: none;
+        cursor: pointer;
+        padding-left: 150px;
+      }
+  }
+  
+  .registro {
+    width: 50%;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 500px;
+    max-height: 500px;
+    padding: 20px;
+
+    & h1 {
+      text-align: center;
+    }
+
+    &  form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &   label {
+      margin-top: 10px;
+    }
+
+    &   input{
+      border-radius: 5px;
+      border: none;
+      padding: 10px;
+    }
+    
+    &   button {
+      background-color: black;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px;
+      margin-top: 20px;
+
+      &:hover {
+        background-color: red;
+      }
+    }
+    
+  }
+}
+  
