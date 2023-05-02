@@ -1,0 +1,36 @@
+.tarj {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+
+
+    & h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    }  
+}
+   
+  
+  .sponsor-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+
+    & a {
+        margin: 10px;
+      }
+
+      & img {
+        max-width: 150px;
+        max-height: 100px;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+      }
+      
+  }

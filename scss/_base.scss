@@ -36,3 +36,29 @@
     color: white;
    }
 }  
+.article__noticias{
+    animation-name: mover-caja;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+    perspective-origin: right;
+
+    @keyframes mover-caja  { 
+        0%{
+           background-color: red;
+           transform: scale(0.7);
+        }
+        35%{
+           transform: scale(0.8);
+        }
+        70%{
+            transform: scale(0.9);
+        }
+        100%{
+             background-color: white;
+           transform: scale(1);
+        }
+     }
+    }
