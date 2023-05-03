@@ -39,27 +39,16 @@
 }
 
 .article__noticias {
-  animation-name: mover-caja;
-  animation-duration: 8s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  transition-timing-function: linear;
-  perspective-origin: right;
+  animation: mover-caja 4s linear 0.3s 1 normal forwards;
 }
 @keyframes mover-caja {
   0% {
-    background-color: red;
-    transform: scale(0.7);
-  }
-  35% {
-    transform: scale(0.8);
-  }
-  70% {
-    transform: scale(0.9);
+    opacity: 0;
+    transform: translateY(-250px);
   }
   100% {
-    background-color: white;
-    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -71,33 +60,7 @@
   background-color: black;
   margin: 5px;
   color: white;
-  height: 160px;
-}
-.encabezado__form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-.encabezado__form button {
-  background-color: black;
-  font-size: 15px;
-  color: white;
-  margin: 5px;
-  padding: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  border: 7px outset red;
-  border-radius: 10px;
-}
-.encabezado__form button:hover {
-  background-color: red;
-}
-.encabezado__imagen {
-  display: none;
-  align-items: center;
-  justify-content: center;
+  height: 200px;
 }
 .encabezado h1 {
   display: flex;
@@ -117,6 +80,120 @@
 }
 .encabezado li a:hover {
   color: red;
+}
+.encabezado .container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 14%;
+  right: 0;
+  bottom: 66%;
+  width: 300px;
+  height: 100px;
+}
+.encabezado .container .search {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background: crimson;
+  border-radius: 50%;
+  transition: all 1s;
+  z-index: 4;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 25px 0 crimson;
+}
+.encabezado .container .search:hover {
+  cursor: pointer;
+}
+.encabezado .container .search::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 22px;
+  right: 0;
+  bottom: 0;
+  left: 22px;
+  width: 12px;
+  height: 2px;
+  background: white;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+.encabezado .container .search::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: -5px;
+  right: 0;
+  bottom: 0;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all 0.5s;
+}
+.encabezado .container input {
+  font-family: "Inconsolata", monospace;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: crimson;
+  color: white;
+  text-shadow: 0 0 10px crimson;
+  padding: 0 80px 0 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 25px 0 crimson, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+  transition: all 1s;
+  opacity: 0;
+  z-index: 5;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+.encabezado .container input:hover {
+  cursor: pointer;
+}
+.encabezado .container input:focus {
+  width: 300px;
+  opacity: 1;
+  cursor: text;
+}
+.encabezado .container input:focus ~ .search {
+  right: -250px;
+  background: #151515;
+  z-index: 6;
+}
+.encabezado .container input:focus ~ .search::before {
+  top: 0;
+  left: 0;
+  width: 25px;
+}
+.encabezado .container input:focus ~ .search::after {
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  border: none;
+  background: white;
+  border-radius: 0%;
+  transform: rotate(-45deg);
+}
+.encabezado .container input::placeholder {
+  color: white;
+  opacity: 0.5;
+  font-weight: bolder;
 }
 
 nav input {
@@ -150,14 +227,11 @@ nav ul {
 
 @media (min-width: 600px) and (max-width: 1024px) {
   .encabezado h1 {
+    font-size: 30px;
     align-items: center;
   }
-  .encabezado__imagen {
-    display: flex;
-  }
-  .encabezado__form {
-    justify-content: center;
-    padding-right: 40px;
+  .encabezado .container {
+    right: 30%;
   }
   nav ul {
     display: flex;
@@ -186,17 +260,14 @@ nav ul {
   }
 }
 @media (min-width: 1025px) {
-  .encabezado__imagen {
-    display: flex;
-    justify-content: center;
+  .encabezado .container {
+    left: 0%;
+    right: 0%;
   }
   .encabezado h1 {
     font-size: 35px;
     align-items: center;
-  }
-  .encabezado__form {
-    justify-content: flex-start;
-    padding-left: 40px;
+    justify-content: flex-end;
   }
   nav ul {
     display: flex;
@@ -450,6 +521,14 @@ footer .redes {
 }
 .registro h1 {
   text-align: center;
+  padding-bottom: 100px;
+  font-size: 80px;
+  text-shadow: 40px 30px 10px black;
+}
+.registro h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 40px;
 }
 .registro form {
   display: flex;
@@ -457,9 +536,11 @@ footer .redes {
   gap: 20px;
 }
 .registro form a {
-  text-decoration: underline;
+  color: white;
+  font-size: 17px;
+}
+.registro form a:hover {
   color: red;
-  font-size: 20px;
 }
 .registro label {
   margin-top: 10px;
@@ -490,18 +571,17 @@ footer .redes {
   .inicio article {
     outline: none;
     cursor: pointer;
-    padding-left: 150px;
   }
   .registro {
-    width: 50%;
+    width: 100%;
     color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 500px;
+    max-width: 600px;
     max-height: 500px;
-    padding: 20px;
+    padding-left: 130px;
   }
-  .registro h1 {
+  .registro h2 {
     text-align: center;
   }
   .registro form {
@@ -1078,7 +1158,7 @@ footer .redes {
   }
   .article__noticias__2 {
     text-align: center;
-    width: 100%;
+    width: 67.5%;
     padding: 5px;
   }
   .article__divisor {
