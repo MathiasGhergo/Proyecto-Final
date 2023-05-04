@@ -112,7 +112,6 @@ nav ul {
 }
 
 .form-cab {
-  animation: mover-caja 1.5s linear normal forwards;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -179,7 +178,6 @@ nav ul {
     display: none;
   }
   .form-cab {
-    animation: mover-caja 1.5s linear 0.5s 1 normal forwards;
     padding-top: 65px;
     justify-content: center;
   }
@@ -211,7 +209,6 @@ nav ul {
     display: none;
   }
   .form-cab {
-    animation: mover-caja 1.5s linear 0.5s 1 normal forwards;
     padding-top: 65px;
     justify-content: center;
   }
