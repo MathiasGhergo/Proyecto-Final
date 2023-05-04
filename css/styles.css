@@ -124,12 +124,11 @@ nav ul {
   max-width: 500px;
 }
 .form-cab input {
-  width: 200px;
+  width: 170px;
   height: 27px;
   flex: 1;
   padding: 10px;
   border: none;
-  padding: 10px;
 }
 .form-cab button {
   background-color: black;
@@ -150,40 +149,34 @@ nav ul {
   .encabezado h1 {
     font-size: 30px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
   nav ul {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     font-family: Georgia, serif;
     font-size: 30px;
-    letter-spacing: 0px;
-    word-spacing: 0px;
     color: #000000;
     font-weight: 700;
     text-decoration: none solid rgb(68, 68, 68);
     font-style: normal;
     font-variant: small-caps;
   }
-  nav input {
-    display: none;
-  }
-  nav input:checked ~ ul {
-    display: none;
-  }
   nav label {
     display: none;
   }
   .form-cab {
-    padding-top: 65px;
-    justify-content: center;
+    padding-left: 10px;
   }
   .form-cab input {
-    width: 400px;
+    width: 250px;
     height: 30px;
+  }
+  .form-cab form {
+    padding-top: 100px;
   }
 }
 @media (min-width: 1025px) {
@@ -209,11 +202,10 @@ nav ul {
     display: none;
   }
   .form-cab {
-    padding-top: 65px;
-    justify-content: center;
+    padding-left: 20px;
   }
   .form-cab input {
-    width: 550px;
+    width: 250px;
     height: 30px;
   }
 }
