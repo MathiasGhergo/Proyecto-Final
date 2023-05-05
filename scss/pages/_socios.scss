@@ -31,7 +31,7 @@
      &__form{
         text-align: center;
         border: solid 5px black;
-        box-shadow: 10px 10px 20px 10px;
+        box-shadow: 10px 5px 20px red;
 
         &-input{
             margin-bottom: 20px;
@@ -43,13 +43,12 @@
     }
 
     &__socios{
-        padding: 30px;
+        font-weight: 700;
+        color: white;
+        font-family: "roboto" sans-serif;
+        padding-bottom: 30px;
         margin: 20px;
-        font-size: 30px;
-        color: red;
-        text-shadow: white -1px 1px, white -2px 2px, white -3px 3px;
-        color: red;
-        letter-spacing: 1px;
+        font-size: 17px;
     } 
     &__button{
         background-color: black;
@@ -116,10 +115,7 @@
          flex-direction: column;
         padding: 30px;
         margin: 20px;
-        font-size: 30px;
-        color: red;
-        text-shadow: white -1px 1px, white -2px 2px, white -3px 3px;
-        color: red;
+        font-size: 17px;
         letter-spacing: 1px;
         width: 50%;
         height:100%;
