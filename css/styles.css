@@ -124,7 +124,7 @@ nav ul {
   max-width: 500px;
 }
 .form-cab input {
-  width: 170px;
+  width: 160px;
   height: 27px;
   flex: 1;
   padding: 10px;
@@ -566,10 +566,15 @@ footer .redes {
   margin: 5px;
   gap: 15px;
   color: white;
-  height: 160px;
+  height: 170px;
   text-align: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 17px;
+}
+.article__partidos picture {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .article__video {
   width: 100%;
@@ -627,6 +632,9 @@ footer .redes {
     border: 1px solid #ccc;
     border-radius: 3px;
     width: 100%;
+  }
+  .article__partidos {
+    font-size: 19px;
   }
   .article__divisor {
     display: flex;

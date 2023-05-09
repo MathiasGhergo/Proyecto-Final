@@ -29,10 +29,16 @@
             margin: 5px;
             gap: 15px;
             color: white;
-            height: 160px;
+            height: 170px;
             text-align: center;
             align-items: center;
-            font-size: 18px;
+            font-size: 17px;
+
+            & picture{
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+            }
         }
         &__video{
             width: 100%;
@@ -98,6 +104,9 @@
                 width: 100%;
             }
     
+            &__partidos{
+                font-size: 19px;
+            }
         &__divisor{
             display: flex;
             flex-direction: row;

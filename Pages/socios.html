@@ -10,9 +10,32 @@
     <meta name="descripcion" content="La pagina Oficial del conjunto millonario, encontraras la manera mas facil , rapida y gratis de asociarte con el club de tus amores.">
 </head>
 <body>
-    <header>
+    <header class="encabezado">
+        <h1><span style="color:red">Club</span><span>Atlético</span><span style="color:red">River</span><span>Plate</span></h1>
+        <nav>
+            <input type="checkbox" id="menu">
+            <label for="menu"> ☰ </label>
+            <ul >
+                <li>
+                    <a href="../index.html">Inicio</a>
+                   </li>
+                   <li>
+                    <a href="../Pages/rivercamp.html">RiverCamp</a>
+                   </li>
+                <li> 
+                    <a href="../Pages/futbol.html">Fútbol</a>
+                </li>
+                <li>
+                     <a href="../Pages/titulos.html">Títulos</a>
+                    </li>
+            </ul>
+         </nav>
+         <div>
+          <form action="" class="form-cab">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+          </form>
     </header>
-
     <main class="socios">
     <section class="contenedor__1">
             <article>
@@ -38,7 +61,6 @@
                     <label for="nacionalidad"><i>Seleccione su Nacionalidad </i> </label>
                     <input class="article__form-input" placeholder="Seleccionar..." type="text" list="nacionalidad">
                    
-
                     <datalist id="nacionalidad">
                       <option value="Argentina">Argentina</option>
                       <option value="Bolivia">Bolivia</option>
@@ -52,11 +74,9 @@
                     <input class="article__form-input" placeholder="e-mail" type="email" list="email">
                     <button class="article__button">Registrarse</button>
                 </form>
-               
             </article>
         </section>
     </main>
-
     <footer>
         <h4><span>Dejanos</span><span style="color:red"> tu comentario </span> <span>para seguir </span><span style="color:red">creciendo juntos.</span> </h4>
         <div class="fila">
