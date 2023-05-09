@@ -17,19 +17,19 @@
   text-shadow: 2px 2px black;
   padding: 20px;
 }
-.titulo__2 {
+.titulo__sombra {
   color: black;
   font-size: 30px;
   text-align: center;
   text-shadow: 2px 2px 2px red;
   padding: 10px;
 }
-.titulo__3 {
+.titulo__centrado {
   font-size: 30px;
   text-align: center;
   padding: 10px;
 }
-.titulo__4 {
+.titulo__negro {
   text-align: center;
   font-size: 20px;
   list-style: none;
@@ -690,6 +690,14 @@ footer .redes {
   transition-delay: 0 0.5s;
 }
 
+.video {
+  padding: 30px;
+  min-height: 500px;
+  height: 100%;
+  max-width: 800px;
+  width: 100%;
+}
+
 .article {
   text-align: center;
   font-size: 20px;
@@ -724,6 +732,15 @@ footer .redes {
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
+  .video {
+    padding-left: 85px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    min-height: 500px;
+    height: 100%;
+    max-width: 700px;
+    width: 100%;
+  }
   .article {
     font-size: 15px;
     padding: 15px;
@@ -736,6 +753,15 @@ footer .redes {
   }
 }
 @media (min-width: 1025px) {
+  .video {
+    padding-left: 200px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    min-height: 500px;
+    height: 100%;
+    max-width: 950px;
+    width: 100%;
+  }
   .article {
     float: left;
     width: 50%;
