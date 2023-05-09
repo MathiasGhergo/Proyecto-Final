@@ -10,7 +10,6 @@
             width: 100%;
             height: calc( 300px + 3em);
         }
-    
         &-open:checked + .slide-item {
             position: static;
             opacity: 100;
@@ -49,11 +48,9 @@
             &.prev {
                 left: 2%;
             }
-    
             &.next {
                 right: 2%;
             }
-    
             &:hover {
                 background: rgba(0, 0, 0, 0.8);
                 color: grey
