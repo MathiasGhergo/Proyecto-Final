@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Todos los Titulos de River</title>
     <link rel="shortcut icon" href="../Img/th (1).ico">
     <meta name="descripcion" content="La pagina Oficial del conjunto millonario, encontraras las ultimas noticias destacadas, el palmares de titulos de la banda junto a las conquistas historicas.">
@@ -36,8 +38,13 @@
             </form>
             </header>
 <main class="contenedor">
+    <div data-aos="fade-down">
+        <script>
+            AOS.init();
+          </script>
     <div class="anim">
         <img class="article__img" src="../Img/encabeza.jpg" alt="banner River Plate">
+    </div>
     </div>
     <section class="article__divisor">
         <article style="align-items: center;">
@@ -244,42 +251,16 @@
                 <strong class="titulo__centrado">Con 9 títulos se convierte en el segundo técnico más ganador con la banda</strong>
             </ul>
             <h2 class="titulo__sombra"> Conquistas Historicas </h2>
-            <div class="slide">
-                <div class="slide-inner">
-                    <input class="slide-open" type="radio" id="slide-1" 
-                          name="slide" aria-hidden="true" hidden="" checked="checked">
-                    <div class="slide-item">
-                        <img src="../Img/342-copa-intercontinental-1986.jpg" alt="Ganadores 1986">
-                    </div>
-                    <input class="slide-open" type="radio" id="slide-2" 
-                          name="slide" aria-hidden="true" hidden="">
-                    <div class="slide-item">
-                        <img src="../Img/344-copa-libertadores-1996.jpg" alt="Ganadores 1996">
-                    </div>
-                    <input class="slide-open" type="radio" id="slide-3" 
-                          name="slide" aria-hidden="true" hidden="">
-                    <div class="slide-item">
-                        <img src="../Img/13750-rivernota.jpg" alt="Ganadores 2018">
-                    </div>
-                    <label for="slide-3" class="slide-control prev control-1">‹</label>
-                    <label for="slide-2" class="slide-control next control-1">›</label>
-                    <label for="slide-1" class="slide-control prev control-2">‹</label>
-                    <label for="slide-3" class="slide-control next control-2">›</label>
-                    <label for="slide-2" class="slide-control prev control-3">‹</label>
-                    <label for="slide-1" class="slide-control next control-3">›</label>
-                    <ol class="slide-indicador">
-                        <li>
-                            <label for="slide-1" class="slide-circulo">•</label>
-                        </li>
-                        <li>
-                            <label for="slide-2" class="slide-circulo">•</label>
-                        </li>
-                        <li>
-                            <label for="slide-3" class="slide-circulo">•</label>
-                        </li>
-                    </ol>
+            <div class="carousel">
+                <div class="carousel-items">
+                    <img src="../Img/342-copa-intercontinental-1986.jpg" alt="Slide 1">
+                  <img src="../Img/344-copa-libertadores-1996.jpg" alt="Slide 2">
+                  <img src="../Img/2018-river-reuters.jpg" alt="Slide 3">
                 </div>
-            </div>
+                <button class="carousel-control prev">&#8249;</button>
+                <button class="carousel-control next">&#8250;</button>
+              </div>          
+              <script src="../carrusel.js"></script>
             <ul class="titulo__negro">
                 <li style="font-size: 30px;"> Copa Intercontinental 1<span style="color:red">9</span>8<span style="color:red">6</span></li> 
                 <p>Primer campeonato Mundial, luego de ganar la primer copa libertadores en el mismo año.</p>

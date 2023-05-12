@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"> 
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta name="descripcion" content="La pagina Oficial del conjunto millonario, encontraras las ultimas noticias destacadas, la manera mas facil de asociarte, tu portal de entradas con acceso gratuito, el palmarés de Titulos.">
     <title> Club Atletico River Plate</title>
     <link rel="shortcut icon" href="./Img/th (1).ico">
@@ -47,9 +49,14 @@
             </form>
     </header>
     <main class="contenedor">
+        <div data-aos="fade-down">
+            <script>
+                AOS.init();
+              </script>
         <div class="anim">
             <img class="article__img" src="./Img/encabeza.jpg" alt="banner River Plate">
         </div>
+    </div>
         <section class="contenedor__1">
             <article class="article">
                 <div class="article__partidos">
@@ -105,42 +112,16 @@
         <figure>
             <iframe class="article__video" src="https://www.youtube.com/embed/uLD4XV9bIFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </figure>
-        <div class="slide">
-            <div class="slide-inner">
-                <input class="slide-open" type="radio" id="slide-1" 
-                      name="slide" aria-hidden="true" hidden="" checked="checked">
-                <div class="slide-item">
-                    <img src="./Img/monu.jpg">
-                </div>
-                <input class="slide-open" type="radio" id="slide-2" 
-                      name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <img src="Img/3-0 a gim.jpg">
-                </div>
-                <input class="slide-open" type="radio" id="slide-3" 
-                      name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <img src="./Img/ind.jpg">
-                </div>
-                <label for="slide-3" class="slide-control prev control-1">‹</label>
-                <label for="slide-2" class="slide-control next control-1">›</label>
-                <label for="slide-1" class="slide-control prev control-2">‹</label>
-                <label for="slide-3" class="slide-control next control-2">›</label>
-                <label for="slide-2" class="slide-control prev control-3">‹</label>
-                <label for="slide-1" class="slide-control next control-3">›</label>
-                <ol class="slide-indicador">
-                    <li>
-                        <label for="slide-1" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-2" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-3" class="slide-circulo">•</label>
-                    </li>
-                </ol>
+        <div class="carousel">
+            <div class="carousel-items">
+                <img src="./Img/enzo.jpg" alt="Slide 1">
+              <img src="./Img/super.jpg" alt="Slide 2">
+              <img src="./Img/borja.jpg" alt="Slide 3">
             </div>
-        </div>
+            <button class="carousel-control prev">&#8249;</button>
+            <button class="carousel-control next">&#8250;</button>
+          </div>          
+          <script src="carrusel.js"></script>
     </article>
         </section>
     <section class="noti">
