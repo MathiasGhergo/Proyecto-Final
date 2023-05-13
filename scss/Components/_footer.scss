@@ -14,6 +14,10 @@ footer{
         width: 50%;
         padding: 10px;
 
+        & form{
+            padding-top: 20px;
+        }
+
         & input{
             background-color: black;
             font-size: 15px;
@@ -28,7 +32,12 @@ footer{
             border: 7px outset red;
             border-radius: 10px;
         }
+
+        & img{
+            padding-left: 20px;
+        }
     } 
+
     .redes{
         font-size: 15px;
         margin-right: 10px;
@@ -42,6 +51,10 @@ footer{
     .col{
         display: flex;
         justify-content: center;
+
+        & form{
+            padding-top: 30px;
+        }
     }
 }
 }

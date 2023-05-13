@@ -336,6 +336,9 @@ footer .col {
   width: 50%;
   padding: 10px;
 }
+footer .col form {
+  padding-top: 20px;
+}
 footer .col input {
   background-color: black;
   font-size: 15px;
@@ -350,6 +353,9 @@ footer .col input {
 footer .col input:hover {
   background-color: red;
 }
+footer .col img {
+  padding-left: 20px;
+}
 footer .redes {
   font-size: 15px;
   margin-right: 10px;
@@ -362,6 +368,9 @@ footer .redes {
   footer .col {
     display: flex;
     justify-content: center;
+  }
+  footer .col form {
+    padding-top: 30px;
   }
 }
 .inicio {
